@@ -40,7 +40,7 @@ const Register = () => {
 
     setIsProcessing(true);
 
-    const url = import.meta.env.SERVER_URL
+    const url = import.meta.env.VITE_SERVER_URL
 
     try {
       const res = await fetch(`${url}/api/auth/register`, {

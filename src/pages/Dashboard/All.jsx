@@ -11,7 +11,7 @@ const All = () => {
   const [documents, setDocuments] = useState([]);
   const [filteredDocuments, setFilteredDocuments] = useState([]);
 
-  const URL = import.meta.env.SERVER_URL;
+  const URL = import.meta.env.VITE_SERVER_URL;
   console.log(URL)
 
   const handleSearch =e=>{

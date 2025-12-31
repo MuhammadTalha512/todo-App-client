@@ -11,7 +11,7 @@ const Add = () => {
   const [isProcessing, setIsProcessing] = useState(false);
   const [todos, setTodos] = useState([]); // store fetched todos
   const navigate =useNavigate()
-  const URL = import.meta.env.SERVER_URL;
+  const URL = import.meta.env.VITE_SERVER_URL;
 
   const handleChange = e =>
     setState(s => ({ ...s, [e.target.name]: e.target.value }));
